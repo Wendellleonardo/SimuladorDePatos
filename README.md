@@ -1,9 +1,10 @@
-# SimuladorDePatos
+# Simulador de Patos
 
 **Alunos**: Alex Mendes, Wendell Leonardo e Yalle Ramos.
 
-Respostas da Atividade
-**2)** Principais ganhos desta estratégia:
+### Respostas:
+
+**2)** Principais ganhos desta estratégia: 
 
 - Flexibilidade em tempo de execução
 
