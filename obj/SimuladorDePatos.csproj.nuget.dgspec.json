@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YalleFerrariD2Cloud\\OneDrive - sga.pucminas.br\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj": {}
+    "D:\\Workspace\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YalleFerrariD2Cloud\\OneDrive - sga.pucminas.br\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj": {
+    "D:\\Workspace\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YalleFerrariD2Cloud\\OneDrive - sga.pucminas.br\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj",
+        "projectUniqueName": "D:\\Workspace\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj",
         "projectName": "SimuladorDePatos",
-        "projectPath": "C:\\Users\\YalleFerrariD2Cloud\\OneDrive - sga.pucminas.br\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj",
-        "packagesPath": "C:\\Users\\YalleFerrariD2Cloud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YalleFerrariD2Cloud\\OneDrive - sga.pucminas.br\\POO\\SimuladorDePatos\\obj\\",
+        "projectPath": "D:\\Workspace\\POO\\SimuladorDePatos\\SimuladorDePatos.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\POO\\SimuladorDePatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\YalleFerrariD2Cloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
