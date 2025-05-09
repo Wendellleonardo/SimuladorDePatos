@@ -25,7 +25,7 @@ class Program
                 case 1:
                     DucksHelper.exibirPatos(opcao);
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
+                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer outro número para voltar ao menu.");
                     int selecionar = int.Parse(Console.ReadLine()!);
                     Console.ForegroundColor = ConsoleColor.White;
                     if (selecionar == 1) {
