@@ -53,43 +53,43 @@ public class DucksHelper
             pato.Familia();
         }
     }
-    public static void jogar(int _opcao, string _selecionar)
+    public static void jogar(int _opcao, int _selecionar)
     {
         if (_opcao == 1)
         {
             MallardDuck pato = new MallardDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 pato.Fly();
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 pato.Sleep();
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 pato.WakeUp();
             }
         }
         if (_opcao == 2)
         {
             RedHeadDuck pato = new RedHeadDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 pato.Fly();
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 pato.Sleep();
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 pato.WakeUp();
             }
             
@@ -97,19 +97,19 @@ public class DucksHelper
         if (_opcao == 3)
         {
             RubberDuck pato = new RubberDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 Console.WriteLine("Esse pato não voa!");
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 Console.WriteLine("O pato de borracha não dorme!");
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 Console.WriteLine("O pato de borracha não dorme!");
             }
             
@@ -117,19 +117,19 @@ public class DucksHelper
         if (_opcao == 4)
         {
             MuscovyDuck pato = new MuscovyDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 pato.Fly();
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 pato.Sleep();
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 pato.WakeUp();
             }
             
@@ -137,19 +137,19 @@ public class DucksHelper
         if (_opcao == 5)
         {
             HarlequinDuck pato = new HarlequinDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 Console.WriteLine("Esse pato não voa, ele apenas plana!");
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 pato.Sleep();
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 pato.WakeUp();
             }
             
@@ -157,19 +157,19 @@ public class DucksHelper
         if (_opcao == 6)
         {
             TorrentDuck pato = new TorrentDuck();
-            if (_selecionar == "quack") {
+            if (_selecionar == 1) {
                 pato.Quack();
             }
-            else if (_selecionar == "fly") {
+            else if (_selecionar == 2) {
                 pato.Fly();
             }
-            else if (_selecionar == "swim") {
+            else if (_selecionar == 3) {
                 pato.swim();
             }
-            else if (_selecionar == "sleep") {
+            else if (_selecionar == 4) {
                 pato.Sleep();
             }
-            else if (_selecionar == "wakeup") {
+            else if (_selecionar == 5) {
                 pato.WakeUp();
             }
 
