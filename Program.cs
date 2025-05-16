@@ -1,10 +1,11 @@
-﻿namespace SimuladorDePatos;
+namespace SimuladorDePatos;
 
 class Program
 {
     static void Main(string[] args)
     {
-        int opcao;
+
+        int opcao, selecionar = -1;
         bool iniciarJogo = false;
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine("\nSeja bem-vindo ao simulador de patos!");
@@ -21,95 +22,87 @@ class Program
             {
                 break;
             }
-            switch (opcao)
+            if (opcao >= 1 && opcao <= 6)
             {
-                case 1:
-                    DucksHelper.exibirPatos(opcao);
+                int indiceAtual = opcao;
+
+                bool escolhendoPato = true;
+                while (escolhendoPato == true)
+                {
+                    DucksHelper.exibirPatos(indiceAtual);
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer outro número para voltar ao menu.");
-                    int selecionar = int.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\nDeseja jogar com esse pato?");
+                    Console.WriteLine("1 - Sim");
+                    Console.WriteLine("7 - Avançar para o próximo pato");
+                    Console.WriteLine("8 - Voltar para o pato anterior");
+                    Console.WriteLine("Qualquer outro número - Voltar ao menu principal");
                     Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
+                    string entrada = Console.ReadLine()!;
+
+                    try
                     {
-                        iniciarJogo = true;
+                        selecionar = int.Parse(entrada);
                     }
-                    break;
-                case 2:
-                    DucksHelper.exibirPatos(opcao);
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
-                    selecionar = int.Parse(Console.ReadLine()!);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
+                    catch
                     {
-                        iniciarJogo = true;
+                        Console.WriteLine("Entrada inválida. Tente novamente!");
+                        continue;
                     }
-                    break;
-                case 3:
-                    DucksHelper.exibirPatos(opcao);
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
-                    selecionar = int.Parse(Console.ReadLine()!);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
+
+                    switch (selecionar)
                     {
-                        iniciarJogo = true;
+                        case 1:
+                            iniciarJogo = true;
+                            escolhendoPato = false;
+                            break;
+                        case 7:
+                            if (indiceAtual < 6)
+                            {
+                                indiceAtual++;
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                Console.WriteLine("\nVocê já está no último pato!");
+                                Console.ForegroundColor = ConsoleColor.White;
+                            }
+                            break;
+                        case 8:
+                            if (indiceAtual > 1)
+                            {
+                                indiceAtual--;
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                Console.WriteLine("\nVocê já está no primeiro pato!");
+                                Console.ForegroundColor = ConsoleColor.White;
+                            }
+                            break;
+                        default:
+                            escolhendoPato = false;
+                            break;
                     }
-                    break;
-                case 4:
-                    DucksHelper.exibirPatos(opcao);
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
-                    selecionar = int.Parse(Console.ReadLine()!);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
-                    {
-                        iniciarJogo = true;
-                    }
-                    break;
-                case 5:
-                    DucksHelper.exibirPatos(opcao);
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
-                    selecionar = int.Parse(Console.ReadLine()!);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
-                    {
-                        iniciarJogo = true;
-                    }
-                    break;
-                case 6:
-                    DucksHelper.exibirPatos(opcao);
-                    Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine("\nDeseja jogar com esse pato? 1 para sim, ou qualquer tecla para voltar ao menu.");
-                    selecionar = int.Parse(Console.ReadLine()!);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    if (selecionar == 1)
-                    {
-                        iniciarJogo = true;
-                    }
-                    break;
-                default:
-                    Console.WriteLine("\nOpção não cadastrada!");
-                    break;
+                }
             }
 
             do
             {
-                if (iniciarJogo == false) {
+                if (iniciarJogo == false)
+                {
                     break;
                 }
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("\n-------------------------------------------------------------------------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
-                Console.WriteLine("\nDigite a ação que seu pato deve realizar (de acordo com o que ele faz segundo a descrição) ou 0 para sair do programa:");
+                Console.WriteLine("\nDigite a ação que seu pato deve realizar (de acordo com o que ele faz segundo a descrição) ou 0 para voltar ao menu:");
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("\nSelecione uma opção para o pato realizar uma ação: \n1 - Quack\n2 - Voar\n3 - Nadar\n4 - Dormir\n5 - Acordar\n0 - Voltar para o menu inicial.");
-                int selecionar = int.Parse(Console.ReadLine()!);
+                int selecao = int.Parse(Console.ReadLine()!);
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.DarkRed;
 
-                if (selecionar == 0)
+                if (selecao == 0)
                 {
                     iniciarJogo = false;
                     Console.WriteLine("Voltando para o menu inicial...");
@@ -118,22 +111,22 @@ class Program
                 switch (opcao)
                 {
                     case 1:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     case 2:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     case 3:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     case 4:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     case 5:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     case 6:
-                        DucksHelper.jogar(opcao, selecionar);
+                        DucksHelper.jogar(opcao, selecao);
                         break;
                     default:
                         Console.WriteLine("Ação não conhecida! Tente novamente.");
