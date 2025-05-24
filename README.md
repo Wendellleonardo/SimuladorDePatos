@@ -1,5 +1,7 @@
 # Simulador de Patos
 
+# OBS.: PARA RODAR O PROJETO, BASTA EXECUTAR CLICANDO NO BOTÃO DE EXECUTAR NO TOPO DO VISUAL STUDIO.
+
 **Alunos**: Alex Mendes, Wendell Leonardo e Yalle Ramos.
 
 ### Respostas:
