@@ -39,18 +39,18 @@
             // 
             // pictureBoxAnimacao
             // 
-            pictureBoxAnimacao.Location = new Point(403, 301);
+            pictureBoxAnimacao.Location = new Point(557, 135);
             pictureBoxAnimacao.Name = "pictureBoxAnimacao";
-            pictureBoxAnimacao.Size = new Size(300, 300);
+            pictureBoxAnimacao.Size = new Size(441, 398);
             pictureBoxAnimacao.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBoxAnimacao.TabIndex = 9;
             pictureBoxAnimacao.TabStop = false;
             // 
             // btnExecAcao
             // 
-            btnExecAcao.Location = new Point(504, 222);
+            btnExecAcao.Location = new Point(197, 372);
             btnExecAcao.Name = "btnExecAcao";
-            btnExecAcao.Size = new Size(95, 23);
+            btnExecAcao.Size = new Size(146, 55);
             btnExecAcao.TabIndex = 8;
             btnExecAcao.Text = "Executar ação";
             btnExecAcao.UseVisualStyleBackColor = true;
@@ -60,16 +60,16 @@
             // 
             comboBoxAcoes.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxAcoes.FormattingEnabled = true;
-            comboBoxAcoes.Location = new Point(491, 193);
+            comboBoxAcoes.Location = new Point(182, 321);
             comboBoxAcoes.Name = "comboBoxAcoes";
-            comboBoxAcoes.Size = new Size(121, 23);
+            comboBoxAcoes.Size = new Size(186, 23);
             comboBoxAcoes.TabIndex = 7;
             // 
             // lblDescricao
             // 
-            lblDescricao.Location = new Point(191, 98);
+            lblDescricao.Location = new Point(182, 199);
             lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(722, 80);
+            lblDescricao.Size = new Size(193, 80);
             lblDescricao.TabIndex = 6;
             lblDescricao.Text = "Descrição do pato...";
             lblDescricao.TextAlign = ContentAlignment.MiddleCenter;
@@ -78,19 +78,20 @@
             // 
             comboBoxPatos.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPatos.FormattingEnabled = true;
-            comboBoxPatos.Location = new Point(491, 72);
+            comboBoxPatos.Location = new Point(182, 158);
             comboBoxPatos.Name = "comboBoxPatos";
-            comboBoxPatos.Size = new Size(121, 23);
+            comboBoxPatos.Size = new Size(186, 23);
             comboBoxPatos.TabIndex = 5;
             comboBoxPatos.SelectedIndexChanged += comboBoxPatos_SelectedIndexChanged;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(488, 283);
+            lblResultado.Location = new Point(714, 166);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(0, 15);
             lblResultado.TabIndex = 10;
+            lblResultado.TextAlign = ContentAlignment.TopRight;
             // 
             // Form1
             // 
