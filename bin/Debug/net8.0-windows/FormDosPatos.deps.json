@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FormDosPatos/1.0.0": {
+        "runtime": {
+          "FormDosPatos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FormDosPatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
