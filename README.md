@@ -2,7 +2,7 @@
 
 ## OBS.: PARA RODAR O PROJETO, BASTA EXECUTAR CLICANDO NO BOTÃO DE EXECUTAR NO TOPO DO VISUAL STUDIO.
 
-**Alunos**: Alex Mendes, Wendell Leonardo e Yalle Ramos.
+**Alunos**: Alex Mendes, Gabriel Madureira, Wendell Leonardo e Yalle Ramos.
 
 ### Respostas:
 
