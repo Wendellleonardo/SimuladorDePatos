@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -13,34 +13,15 @@ namespace FormsPatos
 
         public abstract string Descrever();
 
-        public virtual string Executar(string acao)
+        public virtual string Executar(string acao) => acao switch
         {
-            string resultado;
-
-            switch (acao)
-            {
-                case "Quack":
-                    resultado = Nome + " está fazendo quack!";
-                    break;
-                case "Voar":
-                    resultado = Nome + " está voando!";
-                    break;
-                case "Nadar":
-                    resultado = Nome + " está nadando!";
-                    break;
-                case "Dormir":
-                    resultado = Nome + " está dormindo!";
-                    break;
-                case "Acordar":
-                    resultado = Nome + " acordou!";
-                    break;
-                default:
-                    resultado = Nome + " não fez nada.";
-                    break;
-            }
-
-            return resultado;
-        }
+            "Quack" => IQuack.Quack(Nome),
+            "Voar"  => IVoar.Quack(Nome),
+            "Nadar" => INadar.Quack(Nome),
+            "Dormir" => IDormir.Quack(Nome),
+            "Acordar" => IAcordar.Quack(Nome),
+            _ => Nome + "Não fez nada"
+        };
 
         public override string ToString()
         {
