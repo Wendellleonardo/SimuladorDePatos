@@ -7,14 +7,22 @@ namespace FormsPatos
             return pato.Executar(acao);
         }
 
-        public string ObterCaminhoGif(Duck pato, string acao) => acao switch
+        public string ObterCaminhoGif(Duck pato, string acao)
         {
-            "Quack" => "Gifs/quack.gif";
-            "Voar" => "Gifs/fly.gif";
-            "Nadar" => "Gifs/swim.gif";
-            "Dormir" => "Gifs/sleep.gif";
-            "Acordar" => "Gifs/wakeup.gif";
-            _ => null
-        };
+            if (pato is RubberDuck && (acao == "Voar" || acao == "Nadar" || acao == "Dormir" || acao == "Acordar"))
+            {
+                return null;
+            }
+
+            switch (acao)
+            {
+                case "Quack": return "Gifs/quack.gif";
+                case "Voar": return "Gifs/fly.gif";
+                case "Nadar": return "Gifs/swim.gif";
+                case "Dormir": return "Gifs/sleep.gif";
+                case "Acordar": return "Gifs/wakeup.gif";
+                default: return null;
+            }
+        }
     }
 }
