@@ -1,4 +1,4 @@
-﻿namespace FormsPatos
+namespace FormsPatos
 {
     public class DuckController
     {
@@ -7,25 +7,14 @@
             return pato.Executar(acao);
         }
 
-        public string ObterCaminhoGif(Duck pato, string acao)
+        public string ObterCaminhoGif(Duck pato, string acao) => acao switch
         {
-            if (pato is RubberDuck && (acao == "Voar" || acao == "Dormir" || acao == "Acordar"))
-            {
-                return null;
-            }
-
-            if (acao == "Quack")
-                return "Gifs/quack.gif";
-            else if (acao == "Voar")
-                return "Gifs/fly.gif";
-            else if (acao == "Nadar")
-                return "Gifs/swim.gif";
-            else if (acao == "Dormir")
-                return "Gifs/sleep.gif";
-            else if (acao == "Acordar")
-                return "Gifs/wakeup.gif";
-            else
-                return null;
-        }
+            "Quack" => "Gifs/quack.gif";
+            "Voar" => "Gifs/fly.gif";
+            "Nadar" => "Gifs/swim.gif";
+            "Dormir" => "Gifs/sleep.gif";
+            "Acordar" => "Gifs/wakeup.gif";
+            _ => null
+        };
     }
 }
