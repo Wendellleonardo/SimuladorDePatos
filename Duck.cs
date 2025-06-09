@@ -12,6 +12,11 @@ namespace FormsPatos
     {
         public string Nome { get; set; }
 
+        public override string ToString()
+        {
+            return Nome;
+        }
+
         public IQuack FazendoQuack { get; set; }
         public IVoar Voando { get; set; }
         public INadar Nadando { get; set; }
@@ -61,11 +66,6 @@ namespace FormsPatos
                 default:
                     return $"{Nome} não fez nada.";
             }
-        }
-
-        public override string ToString()
-        {
-            return Nome;
         }
     }
 
