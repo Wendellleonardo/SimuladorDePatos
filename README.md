@@ -1,6 +1,7 @@
 # Simulador de Patos
 
 ## OBS.: PARA RODAR O PROJETO, BASTA EXECUTAR CLICANDO NO BOTÃO DE EXECUTAR NO TOPO DO VISUAL STUDIO.
+A VERSÃO 100% ATUALIZADA ESTÁ NA BRANCH FORMSMELHORADO
 
 **Alunos**: Alex Mendes, Gabriel Madureira, Wendell Leonardo e Yalle Ramos.
 
