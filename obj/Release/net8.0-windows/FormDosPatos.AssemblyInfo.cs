@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormDosPatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2b57f6cfe0a7b4432fd74a764833ed65be8b38f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b6c1f847881037eba8fbeba15ff2f3eb77c4f41")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormDosPatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormDosPatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

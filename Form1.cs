@@ -11,6 +11,7 @@ namespace FormDosPatos
         }
 
         private List<Duck> patos = new List<Duck>();
+        private DuckController controller = new DuckController();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -42,7 +43,6 @@ namespace FormDosPatos
 
         private void btnExecAcao_Click(object sender, EventArgs e)
         {
-            string caminhoGif = null;
             string acao = comboBoxAcoes.SelectedItem?.ToString();
             if (acao == null)
             {
@@ -52,33 +52,9 @@ namespace FormDosPatos
 
             if (comboBoxPatos.SelectedItem is Duck pato)
             {
+                lblResultado.Text = controller.ExecutarAcao(pato, acao);
 
-                lblResultado.Text = pato.Executar(acao);
-
-                if (pato is RubberDuck && (acao == "Voar" || acao == "Dormir" || acao == "Acordar"))
-                {
-                    pictureBoxAnimacao.Image = null;
-                    return;
-                }
-
-                switch (acao)
-                {
-                    case "Quack":
-                        caminhoGif = "Gifs/quack.gif";
-                        break;
-                    case "Voar":
-                        caminhoGif = "Gifs/fly.gif";
-                        break;
-                    case "Nadar":
-                        caminhoGif = "Gifs/swim.gif";
-                        break;
-                    case "Dormir":
-                        caminhoGif = "Gifs/sleep.gif";
-                        break;
-                    case "Acordar":
-                        caminhoGif = "Gifs/wakeup.gif";
-                        break;
-                }
+                string caminhoGif = controller.ObterCaminhoGif(pato, acao);
 
                 if (caminhoGif != null && File.Exists(caminhoGif))
                 {
@@ -88,7 +64,6 @@ namespace FormDosPatos
                 {
                     pictureBoxAnimacao.Image = null;
                 }
-
             }
         }
 
